@@ -4,8 +4,8 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.metrics.pairwise import linear_kernel, cosine_similarity
 
-df = pd.read_csv('data/movies_df.csv')
-# df = pd.read_csv('../data/movies_df.csv')
+# df = pd.read_csv('data/movies_df.csv')
+df = pd.read_csv('../data/movies_df.csv')
 df['overview'] = df['overview'].fillna('')
 indices = pd.Series(df.index, index=df['title'])
 
