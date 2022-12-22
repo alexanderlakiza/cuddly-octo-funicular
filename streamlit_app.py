@@ -1,6 +1,6 @@
 import streamlit as st
 
-from my_rec_sys.recsys import check_movie_appearance, RecommendationSystem
+from course_work.my_rec_sys.recsys import check_movie_appearance, RecommendationSystem
 
 
 @st.cache(ttl=100000)
